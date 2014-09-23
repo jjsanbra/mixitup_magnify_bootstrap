@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ejercicio de Unión de Plugins - MixItUp / Adipoli / MagnifyMe</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Ejercicio de aplicación de varios Plugins jQuery - MixItUp / Adipoli / MagnifyMe" />
+    <meta name="keywords" content="Ejercicio, Boostrap, jQuery, MixItUp, Adipoli, MagnifyMe" />
+    <meta name="author" content="Julio Sanquis" />
+
+    <!-- Bootstrap & Custom CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/adipoli.css">
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+	<!-- Contenido -->
+	<div class="container">
+
+	<h1 class="text-center">Mi Galería de Fotos</h1>
+
+	<nav class="row text-center">
+		<ul>
+			<li>
+				<a href="#" class="btn btn-default filter active" data-filter="all">Todas las Fotografías</a>
+			</li>
+			<li>
+				<a href="#" class="btn btn-primary filter" data-filter=".deportes">Deportes</a>
+			</li>
+			<li>
+				<a href="#" class="btn btn-primary filter" data-filter=".naturaleza">Naturaleza</a>
+			</li>
+			<li>
+				<a href="#" class="btn btn-primary filter" data-filter=".abstracto">Abstracto</a>
+			</li>
+			<li>
+				<a href="#" class="btn btn-success sort" data-sort="random">Aleatorias</a>
+			</li>
+		</ul>
+	</nav>
+
+	<section id="contenedor" class="row text-center">
+		<article class="mix deportes">
+			<a href="image1.html">
+				<figure>
+					<img src="http://lorempixel.com/200/200/sports/1" alt="Deporte 1"/>
+				</figure>
+			</a>
+			<hgroup>
+				<h3>Deporte 1</h3>
+			</hgroup>
+		</article>
+
+		<article class="mix naturaleza">
+			<a href="#">
+				<figure>
+					<img src="http://lorempixel.com/200/200/nature/1" alt="Naturaleza 1"/>
+				</figure>
+			</a>
+			<hgroup>
+				<h3>Naturaleza 1</h3>
+			</hgroup>
+		</article>
+
+		<article class="mix abstracto">
+			<a href="#">
+				<figure>
+					<img src="http://lorempixel.com/200/200/abstract/1" alt="Abstracto 1"/>
+				</figure>
+			</a>
+			<hgroup>
+				<h3>Abstracto 1</h3>
+			</hgroup>
+		</article>
+
+		<article class="mix deportes">
+			<a href="#">
+				<figure>
+					<img src="http://lorempixel.com/200/200/sports/2" alt="Deporte 2"/>
+				</figure>
+			</a>
+			<hgroup>
+				<h3>Deporte 2</h3>
+			</hgroup>
+		</article>
+
+		<article class="mix naturaleza">
+			<a href="#">
+				<figure>
+					<img src="http://lorempixel.com/200/200/nature/2" alt="Naturaleza 2"/>
+				</figure>
+			</a>
+			<hgroup>
+				<h3>Naturaleza 2</h3>
+			</hgroup>
+		</article>
+
+		<article class="mix abstracto naturaleza">
+			<a href="#">
+				<figure>
+					<img src="http://lorempixel.com/200/200/abstract/2" alt="Abstracto 2"/>
+				</figure>
+			</a>
+			<hgroup>
+				<h3>Abstracto 2</h3>
+			</hgroup>
+		</article>
+
+		<article class="mix deportes">
+			<a href="#">
+				<figure>
+					<img src="http://lorempixel.com/200/200/sports/3" alt="Deporte 3"/>
+				</figure>
+			</a>
+			<hgroup>
+				<h3>Deporte 3</h3>
+			</hgroup>
+		</article>
+
+		<article class="mix naturaleza">
+			<a href="#">
+				<figure>
+					<img src="http://lorempixel.com/200/200/nature/3" alt="Naturaleza 3"/>
+				</figure>
+			</a>
+			<hgroup>
+				<h3>Naturaleza 3</h3>
+			</hgroup>
+		</article>
+
+		<article class="mix abstracto">
+			<a href="#">
+				<figure>
+					<img src="http://lorempixel.com/200/200/abstract/3" alt="Abstracto 3"/>
+				</figure>
+			</a>
+			<hgroup>
+				<h3>Abstracto 3</h3>
+			</hgroup>
+		</article>
+
+		<article class="mix deportes">
+			<a href="#">
+				<figure>
+					<img src="http://lorempixel.com/200/200/sports/3" alt="Deporte 3"/>
+				</figure>
+			</a>
+			<hgroup>
+				<h3>Deporte 4</h3>
+			</hgroup>
+		</article>
+
+		<article class="mix naturaleza">
+			<a href="#">
+				<figure>
+					<img src="http://lorempixel.com/200/200/nature/4" alt="Naturaleza 4"/>
+				</figure>
+			</a>
+			<hgroup>
+				<h3>Naturaleza 4</h3>
+			</hgroup>
+		</article>
+
+		<article class="mix abstracto">
+			<a href="#">
+				<figure>
+					<img src="http://lorempixel.com/200/200/abstract/4" alt="Abstracto 4"/>
+				</figure>
+			</a>
+			<hgroup>
+				<h3>Abstracto 4</h3>
+			</hgroup>
+		</article>
+
+		
+
+	</section>
+		
+
+
+	</div>
+
+
+  	<!-- Fin de Contenido / Comienza carga de ficheros .js -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/jquery.adipoli.min.js"></script>
+    <script src="js/jquery_plugins.js"></script>    
+   
+  </body>
+</html>
