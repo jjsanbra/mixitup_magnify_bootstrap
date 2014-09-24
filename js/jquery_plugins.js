@@ -14,10 +14,4 @@ $(document).on('ready', function(){
 	$('article figure img').adipoli();
 
 
-	/*
-	--- Inicialización de Plugin de Efecto Lupa
-		Plugin: MagnifyMe - Sitio Web: http://www.codepunker.com/blog/magnify-me-jquery-image-magnifier-plugin	
-	
-    jQuery('.magnifyMe').magnifyMe('lupa');*/
-
 });

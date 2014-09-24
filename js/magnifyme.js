@@ -1,8 +1,8 @@
 (function( $ ) {
           $.fn.magnifyMe = function(childClass) {
             this.mousemove(function(event) {
-                var left = event.clientX - jQuery(this).offset().left - (0.05*jQuery(this).width());
-                var top = event.clientY - jQuery(this).offset().top - (0.05*jQuery(this).height());
+                var left = event.clientX - jQuery(this).offset().left - (0.065*jQuery(this).width());
+                var top = event.clientY - jQuery(this).offset().top - (0.1*jQuery(this).height());
 
                 var bpl = (( event.clientX - jQuery(this).offset().left ) / jQuery(this).width()) * 100;
                 var bpt = (( event.clientY - jQuery(this).offset().top ) / jQuery(this).height()) * 100;

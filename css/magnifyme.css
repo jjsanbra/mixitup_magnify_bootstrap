@@ -1,9 +1,10 @@
 .magnifyMe {
-  background: url('http://lorempixel.com/760/150/nature/5');
+  /*background: url('http://lorempixel.com/760/520/sports/1');*/
   background-size: contain;
   background-repeat: no-repeat;
+  border-radius: 10px;
   width: 760px;
-  height: 150px;
+  height: 520px;
   position: relative;
   overflow: hidden;
 }
@@ -12,7 +13,7 @@
   width: 100px;
   height: 100px;
   position: absolute;
-  background: url('http://lorempixel.com/1400/320/nature/5');
+  /*background: url('http://lorempixel.com/1520/1040/sports/1');*/
   background-size: initial;
   background-repeat: no-repeat;
   border-radius: 100px;
@@ -24,3 +25,11 @@
 div.magnifyMe:hover .lupa {
   opacity: 1;
 };
+
+#dep1 {
+  background: url('http://lorempixel.com/760/520/sports/1');
+}
+
+#dep1-mag {
+  background: url('http://lorempixel.com/1520/1040/sports/1');
+}

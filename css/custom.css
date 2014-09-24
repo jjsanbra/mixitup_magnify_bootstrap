@@ -2,7 +2,7 @@ h1 {
 	margin: 30px auto 40px auto;
 }
 
-img {
+article figure img {
 	border-radius: 5px 5px 0 0;
 }
 
@@ -22,7 +22,8 @@ ul li {
 }
 
 section {
-	background-color: #ddd;
+	background-color: rgba(255,255,255,0.1);
+	border-radius: 10px;
 	margin-top: 20px;
 	padding: 30px;
 }
@@ -32,7 +33,7 @@ section {
 }
 
 .mix {
-	box-shadow: 2px 2px 10px rgba(150,150,150,0.5);
+	box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
 	display: none;
 	height: 266px;
 	margin: 10px;
