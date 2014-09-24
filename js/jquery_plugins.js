@@ -20,8 +20,14 @@ $(document).on('ready', function(){
     jQuery('.base').magnifyMe('lupa');
 
 
-    /*                */
+    /* Script para los botones de la ventana modal */
     $('article a').on('click', function(){
+
+    	/*Selecciona todos los elementos con la clase
+		"base", con attr(par1, par2) le asigna un id con
+		la ruta "article>a" 
+		*/
+		//$('.base').attr('id','dep1');
     	$('.base').attr('id',$(this).attr('base'));
 		$('.lupa').attr('id',$(this).attr('lupa'));    	
     });
