@@ -1,0 +1,357 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+
+/* #Page Styles
+================================================== */
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+		h2 { font-size: 15px; line-height: 20px; margin-bottom: 16px; margin-top: -10px; text-align: center;}
+
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+
+		h2 { font-size: 17px; line-height: 20px; margin-bottom: 16px; margin-top: -5px; text-align: center;}
+	}
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+
+/* HTML
+================================================ */
+
+body {
+	background:url(../images/background.jpg) no-repeat center center fixed;
+}
+
+
+/* Header
+================================================= */
+
+header {
+	margin: 20px auto 10px auto;
+	text-align: center;
+}
+
+
+/* Generic Classes
+================================================= */
+
+.article {
+	padding: 0px 25px;
+}
+
+
+/* Banner
+================================================= */
+#banner {
+	margin-bottom: 10px;
+}
+
+#banner img {
+	max-width: 100%;
+	border-radius: 10px;
+}
+
+/* Promo
+================================================= */
+
+#promo {
+	background-color:rgba(255,255,255,0.7);
+	padding-bottom:10px;
+	border-radius: 20px;
+	text-align: center;
+}
+
+#pena img {
+	max-width: 95%;
+}
+
+#hotel img {
+	max-width: 95%;
+	border-radius: 30px;
+}
+
+
+/* Contacto 
+================================================= */
+
+#contacto {
+	background: linear-gradient(#FFF, #CCC);
+	background: -moz-linear-gradient(#FFF, #CCC);
+	background: -o-linear-gradient(#FFF, #CCC);
+	background: -webkit-linear-gradient(#FFF, #CCC);
+	background: #DDD;
+	padding:0;
+	border-radius: 20px;
+	height: 461px;
+	margin-bottom: 10px;
+}
+
+.cont-head {
+	background: url(../images/info.png) no-repeat;
+	background-size: 100% auto;
+}
+
+#contacto form input[type="text"], 
+#contacto form input[type="email"],
+#contacto form input[type="tel"],
+#contacto form textarea {
+	width:90%;
+	height:25px;
+	padding:0 10px 0 10px;
+	font-size: 12px;
+	color:#b0a5a1;
+	letter-spacing:1px;
+	background-color:#FFF;
+	border:2px solid #FFF;
+	border-radius:10px;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+
+#contacto form input[type="text"]:focus,
+#contacto form input[type="email"]:focus,
+#contacto form input[type="tel"]:focus,
+#contacto form textarea:focus {
+	border:2px solid #F60;
+	border-radius: 15px;
+	color:#b0a5a1;
+}
+
+#contacto form input[type="text"]:required:valid,
+#contacto form input[type="email"]:required:valid,
+#contacto form input[type="tel"]:required:valid,
+#contacto form textarea:required:valid {
+	border:2px solid #F60;
+	color:#F60;
+	background-repeat:no-repeat;
+	background-position:98%;
+}
+
+#contacto form input[type="text"]:required:invalid,
+#contacto form input[type="email"]:required:invalid,
+#contacto form input[type="tel"]:required:invalid,
+#contacto form textarea:required:invalid {
+	background-repeat:no-repeat; background-position:98%;
+}
+
+#contacto form textarea:required:valid,
+#contacto form textarea:required:invalid {
+	background-position:98% 8px;
+}
+
+#contacto form textarea {
+	resize:vertical;
+	height:100px;
+}
+
+#contacto form label {
+	color:#8f827a;
+	font-size:14px;
+	font-weight:700;
+	letter-spacing:1px;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color:#333;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+	color:#333;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+	color:#333;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+	color:#333;
+}
+
+#contacto form .required {
+	color:#F60;
+}
+
+#contacto form .submit {
+	width:95%;
+	padding:5px 10px;
+	background-color:#F60;
+	height:40px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	color:#FFF; 
+	margin-top:20px;
+	border:2px solid #F60;
+	border-radius: 10px;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+
+#contacto form .submit:hover {
+	color:#FFF;
+	border:2px solid #F00;
+	background-color: #F00;
+	cursor:pointer;
+}
+
+#contacto p.privacidad {
+	clear: both;
+	float: none;
+	position: relative;
+}
+
+#contacto p.privacidad input {
+	position: absolute;
+	top: 1px;
+}
+
+#contacto p.privacidad label {
+	display: block;
+	margin-left: 25px;
+	font-size: 10px;
+	letter-spacing: 0;
+}
+
+#contacto p.privacidad a {
+	color:#F00;
+	text-decoration:none;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+
+#contacto p.privacidad a:hover {
+	color:#777;
+	text-decoration:none;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+
+.error{
+	background-color: #F60;
+	padding: 7px 12px;
+	border-radius: 15px;
+	color: white;
+	top: -15px;
+	margin: 0 10px 0 0;
+	position: relative;
+}
+
+
+/* Confirmaciones
+================================== */
+
+#confirma {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	margin: 0 0;
+	padding: 20px;
+	text-align: center;
+	color: #666;
+}
+
+#confirma img {
+	padding-top: 20px;
+	max-width: 80%;
+}
+
+#confirma p {
+	font-size: 1.5em;
+	padding: 0 1em;
+	text-align: justify;
+}
+
+#confirma a {
+	color: #008DD0;
+}
+
+#confirma a:hover {
+	color: #F60;
+}
+
+.pol-priv {
+	font-size: 12px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.pol-priv p {
+	margin: 0 80px;
+}
+
+
+
+/* Footer
+================================================= */
+
+footer {
+	background: linear-gradient(#F00, #9A001E);
+	background: -moz-linear-gradient(#F00, #9A001E);
+	background: -o-linear-gradient(#F00, #9A001E);
+	background: -webkit-linear-gradient(#F00, #9A001E);
+	background: #F00;
+	height: 50px;
+	border-radius: 15px;	
+}
+
+footer h2 {
+	letter-spacing: 2px;
+	padding-top: 12px;
+}

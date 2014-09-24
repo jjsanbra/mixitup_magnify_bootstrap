@@ -1,0 +1,27 @@
+.error{
+    background-color: #FFF;
+    border-radius: 4px 4px 4px 4px;
+    border: 2px solid #BC1010;
+    color: #BC1010;
+    margin-left: 6px;
+    padding: 4px 12px;
+    position: absolute;
+    box-shadow: 2px 2px 10px #666;
+}
+
+.error:before{
+    border-color: transparent #BC1010 transparent transparent;
+    border-style: solid;
+    border-width: 6px 8px;
+    content: "";
+    display: block;
+    height: 0;
+    left: -16px;
+    position: absolute;
+    top: 8px;
+    width: 0;
+}
+
+.required {
+    color:#F60;
+}

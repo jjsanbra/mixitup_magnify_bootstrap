@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Formulario de Inserción</title>
+
+<!-- styles -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link href="css/bootstrap.css" rel="stylesheet" />
+<link href="css/bootstrap-responsive.css" rel="stylesheet" />
+<link href="css/estilos.css" rel="stylesheet" />
+<link href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet" />
+
+
+<!--Scripts-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src='js/funciones.js'></script>
+<script src="http://silviomoreto.github.io/bootstrap-select/javascripts/bootstrap-select.js"></script>
+<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('#datetimepicker').datetimepicker({
+          pickTime: false
+        });
+    });
+</script>
+
+</head>  
+
+<body>  
+<div class="container-fluid">
+    <div class="row-fluid">
+        <h4>Formulario de Registro de Usuarios</h4>
+        <h1 style="line-height:.6em;">Go to Your Shop!</h1>
+        <br />
+        <form method="post" id="formulario" action="/Db/" name="dataForm">
+            <h3>Registro de Nuevos Usuarios</h3>
+            <div class="well alert-success">
+                <h4>Datos Personales</h4>
+                <div class="row-fluid">
+                <div class="span6"><label><strong>Nombre:</strong></label><input type='text' name='nombre' id='nombre' class='nombre span10' placeholder='Nombre del cliente'></div>
+                <div class="span6"><label><strong>Apellidos:</strong></label><input type='text' name='apellidos' id='apellidos' class='apellidos span10' placeholder='Apellido del cliente'></div>
+            </div>
+            <br />
+            <div class="row-fluid">
+                <div class="span6"><label><strong>Fecha de Nacimiento:</strong></label>
+                    <div id="datetimepicker" class="input-prepend">
+                        <span class="add-on">
+                           <i data-date-icon="icon-calendar"></i>
+                        </span>
+                        <input data-format="dd-MM-yyyy" type="text" class="fnac" name="fnac"></input>
+                    </div>
+                    
+                </div>
+                <div class="span6">
+                    <label><strong>Sexo:</strong></label>
+                    <select class="span10" id="sexo" name="sexo">
+                        <option value=''>Seleccione sexo</option>
+                        <option value='Mujer'>Mujer</option>
+                        <option value='Hombre'>Hombre</option>
+                    </select>
+                </div>
+            </div>
+            <br />
+            <div class="row-fluid">
+                <div class="span6"><label><strong>Documento de Identidad:</strong></label>
+                    <select class="span10" id="docide" name="docide">
+                        <option value=''>Seleccione tipo</option>
+                        <option value='DNI'>D.N.I.</option>
+                        <option value='NIE'>N.I.E.</option>
+                        <option value='NIF'>N.I.F.</option>
+                        <option value='CIF'>C.I.F.</option>
+                    </select>
+                </div>
+                    <div class="span6"><label>.</label><input type='text' name='numide' id='numide' class='numide span10' placeholder='Número de documento de identidad'></div>
+            </div>
+            <br />
+            <div class="row-fluid">
+                <div class="span6"><label><strong>Dirección:</strong></label><textarea name='direccion' class='direccion span10' rows="2" placeholder='Calle, Número, Planta, Puerta, etc.'></textarea></div>
+                <div class="span6"><label><strong>Código Postal:</strong></label><input type='text' name='cp' id='cp' class='cp span10' placeholder='Código Postal de 5 dígitos'></div>
+            </div>
+            <br />
+            <div class="row-fluid">
+                <div class="span6"><label><strong>Localidad:</strong></label><input type='text' name='localidad' id='localidad' class='localidad span10' placeholder='Ciudad o Localidad de residencia'></div>
+                <div class="span6"><label><strong>Provincia:</strong></label><input type='text' name='provincia' id='provincia' class='provincia span10' placeholder='Provincia de residencia'></div>
+            </div>
+        </div>
+        <div class="well alert-info">
+            <h4>Datos de Contacto</h4>
+            <br />
+            <div class="row-fluid">
+                <div class="span6"><label><strong>Móvil:</strong></label><input type='tel' name='movil' id='movil' class='movil span10' placeholder='Número de teléfono móvil'></div>
+                <div class="span6"><label><strong>Teléfono Fijo: </strong><small class="text-error">(opcional)</small></label><input type='tel' name='fijo' id='fijo' class='fijo span10' placeholder='Número de teléfono fijo'></div>
+            </div>
+            <br />
+             <div class="row-fluid">
+                <div class="span6"><label><strong>E-mail:</strong><small class="text-error">(opcional)</small></label><input type='email' name='email' id='email' class='email span10' placeholder='Correo electrónico del cliente'></div>
+            </div>
+        </div>
+        <br />
+        <h3>Datos para el Sorteo</h3>
+        <div class="row-fluid">
+            <div class="span12 well">
+                <div>
+                <strong>¿El Cliente tiene Código Promocional?</strong>
+                <br />
+                <br />
+                <label class="checkbox confirm"><input type="checkbox" name="c1" id="checkconcod" value="1" onchange="javascript:showContent()"> <strong>SI,</strong> tiene código promocional</label>
+                <div id="concod" style="display: none;">
+                    <div>
+                        <h3>Cliente con Código Promocional</h3>
+                        <div class="span11"><label><strong>Código Promocional<span class="text-error">*</span>:</strong></label><input type='text' name='codpromo' id='codpromo' class='codpromo' placeholder='Introduzca Código'></div>
+                        <small class="span11"><span class="text-error">*</span> En este apartado se escribirá el código que se le facilitó al cliente y que le dá derecho a 2 participaciones en el sorteo.<br /><br /><br /></small>
+                        <div class="span11 well alert-success">
+                            <h4>Producto(s) Contratado(s)<span class="text-error">*</span>:</h4>
+                            <br />
+                            <label class="checkbox"><input type="checkbox" name="a1"> <strong>ADSL</strong> - Contratación de Línea ADSL.</label>
+                            <label class="checkbox"><input type="checkbox" name="a2"> <strong>Portabilidad Móvil</strong> - Cambio de operador en telefonía móvil o fija.</label>
+                            <label class="checkbox"><input type="checkbox" name="a3"> <strong>Mi fijo</strong> - Contratación de línea de teléfono fija con tarifa promocional.</label>
+                            <label class="checkbox"><input type="checkbox" name="a4"> <strong>Renove</strong> - Cambio de terminal con adhesión a contrato de permanencia.</label>
+                            <label class="checkbox"><input type="checkbox" name="a5"> <strong>Accesorio</strong> - Compra de un accesorio.</label>
+                            <br />
+                            <small class="span11"><span class="text-error">*</span> Por la compra o contratación de uno de estos productos o servicios el cliente recibirá 8 participaciones adicionales para el sorteo.</small>  
+                        </div>
+                    </div>
+                  </div>
+                  <div id="sincod">
+                     <div>
+                        <h3>Cliente sin Código Promocional</h3>
+                        <br />
+                        <div class="span11 well alert-error">
+                            <h4>Producto(s) Contratado(s)<span class="text-error message">*</span>:</h4>
+                            <br />
+                            <label class="checkbox"><input class="checkboxing" type="checkbox" id="checkboxing" value="1" name="b1"> <strong>ADSL</strong> - Contratación de Línea ADSL.</label>
+                            <label class="checkbox"><input class="checkboxing" type="checkbox" id="checkboxing" value="2" name="b2"> <strong>Portabilidad Móvil</strong> - Cambio de operador en telefonía móvil o fija.</label>
+                            <label class="checkbox"><input class="checkboxing" type="checkbox" id="checkboxing" value="3" name="b3"> <strong>Mi fijo</strong> - Contratación de línea de teléfono fija con tarifa promocional.</label>
+                            <label class="checkbox"><input class="checkboxing" type="checkbox" id="checkboxing" value="4" name="b4"> <strong>Renove</strong> - Cambio de terminal con adhesión a contrato de permanencia.</label>
+                            <label class="checkbox"><input class="checkboxing" type="checkbox" id="checkboxing" value="5" name="b5"> <strong>Accesorio</strong> - Compra de un accesorio.</label>
+                            <br />
+                            <small class="span11"><span class="text-error">*</span> Por la compra o contratación de uno de estos productos o servicios el cliente recibirá <strong>1 participación</strong> para participar en el sorteo.</small>
+                        </div>
+                    </div>
+                </div> 
+              </div>
+            <br />
+            <br />
+            <div class="row-fluid"><input class="btn btn-success btn-large submit pull-right" type='submit' value='Crear participaciones' name='submit'></div>
+        </form>
+    </div>
+</div>
+</body>  
+</html>

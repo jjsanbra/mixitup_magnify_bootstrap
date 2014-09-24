@@ -1,0 +1,47 @@
+/* Estilos para el Header */
+header {
+	height: 100px;
+}
+
+/* Estilos para el H1 y H3 */
+h1, h3 {
+	font-weight: bold;
+	text-align: center;
+}
+
+/* Estilos para el section */
+section {
+	background-color: #ddd;
+	border-radius: 15px;
+	height: 250px;
+}
+
+
+/*-----------------------------------------------*/
+/* Estilos Personalizados a aplicar desde jQuery */
+
+.tituloh1 {
+	color: #f00;
+	font-size: 3em;
+}
+
+.tituloh3 {
+	color: #f00;
+	font-size: 1em;
+}
+
+.fondo {
+	background-color: #fd0;
+	border-radius: 15px;
+	box-shadow: 3px 3px 5px #666;
+	height: 250px;
+	text-align: center;
+}
+
+.ocultar {
+	display:none;
+}
+
+.color {
+	color: #05f;
+}
